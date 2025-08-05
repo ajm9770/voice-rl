@@ -40,7 +40,7 @@ class Qlearner():
             "rewards": rewards
         }
 
-        modelpath = './models/'+ self.model_name + datetime.today().strftime("%m_%d") + '_' + str(epochs) + '.p'
+        modelpath = './output/savedmodels'+ self.model_name + datetime.today().strftime("%m_%d") + '_' + str(epochs) + '.p'
 
         with open(modelpath, 'wb') as f:
             pickle.dump(data, f)
